@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookings</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+<nav><a class="indexButtons" href="http://localhost:8080">Home</a></nav>
+
+<h2 th:text="${bookingTitle}"></h2>
+
+<h4 th:text="${message}"></h4>
+<h4 th:text="${feedbackMessageUpdateBooking}"></h4>
+<h4 th:text="${feedbackMessageCreateBooking}"></h4>
+<div class="allBookings" >
+
+
+
+    <table>
+        <th th:text="${bookingId}"></th>
+        <th th:text="${customerId}"></th>
+        <th th:text="${customerName}"></th>
+        <th th:text="${customerEmail}"></th>
+
+        <th th:text="${startDate}"></th>
+        <th th:text="${endDate}"></th>
+        <th th:text="${guestQuantity}"></th>
+        <th th:text="${roomId}"></th>
+        <th th:text="${roomSize}"></th>
+        <th th:text="${extraBedsQuantity}"></th>
+        <th></th>
+        <th></th>
+        <tbody>
+        <tr th:each="book : ${allBookings}">
+            <td th:text="${book.id}"></td>
+            <td th:text="${book.customer.id}"></td>
+            <td th:text="${book.customer.name}"></td>
+            <td th:text="${book.customer.email}"></td>
+            <td th:text="${book.startDate}"></td>
+            <td th:text="${book.endDate}"></td>
+            <td th:text="${book.guestQuantity}"></td>
+            <td th:text="${book.room.id}"></td>
+            <td th:text="${book.room.roomType.roomSize}"></td>
+            <td th:text="${book.extraBedsQuantity}"></td>
+
+            <td><a class="deleteButton" th:href="@{deleteById/{id}/(id=${book.id})}">Delete</a></td>
+            <td><a class="updateButton" th:href="@{/booking/updateBookingByView/{bookingId}/(bookingId=${book.id})}">Update</a></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
+</body>
+</html>

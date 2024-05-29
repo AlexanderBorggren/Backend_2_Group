@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#loginAccount
+{
+    text-align: right;
+    font-weight: bold;
+}
+
+.header {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 250px;
+
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+nav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#Home {
+    text-align: left;
+}
+.deleteButton
+{
+    display: inline-block;
+    margin: -10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #af1717;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.updateButton
+{
+    display: inline-block;
+    margin: -10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #313131;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.updateButton:hover {
+    background-color: #101010;
+}
+
+.addButton
+{
+    display: inline-block;
+    margin: -10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffeb34;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.addButton:hover {
+    background-color: #f4ed9c;
+}
+
+
+.bookRoomButton
+{
+    display: inline-block;
+    margin: -10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3a9f31;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.bookRoomButton:hover {
+    background-color: #20591b;
+}
+.deleteButton:hover {
+    background-color: #5d0c0c;
+}
+
+nav a.indexButtons {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a.indexButtons:hover {
+    background-color: #0056b3;
+}
+#adminButton {
+    background-color: #101010;
+}
+
+#adminButton:hover {
+    background-color: #313131;
+}
+
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+form input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+    display: block;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+form input[type="submit"]:disabled {
+    background-color: #808080;
+}
+
+/* Increase specificity for .nameLink */
+td .nameLink {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Increase specificity for .linkedText */
+td .linkedText {
+    font-weight: bold;
+    color: #333;
+}
+
+.pagination {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.pagination .page-item {
+    margin: 0 5px;
+}
+
+.pagination .page-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.pagination .page-item.active .page-link {
+    font-weight: bold;
+    color: #007bff;
+}
+#indexMeny {
+
+  a:hover {
+    background-color: #333131;
+  }
+}
